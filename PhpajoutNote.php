@@ -28,9 +28,6 @@ if(empty($_POST['DATE']) || empty($_POST['TOTAL']) || empty($_POST['CATEGORIE'])
 	}
 	else{
 	$extensions_valides = array( 'jpg' , 'jpeg' , 'png' );
-	//1. strrchr renvoie l'extension avec le point (« . »).
-	//2. substr(chaine,1) ignore le premier caractère de chaine.
-	//3. strtolower met l'extension en minuscules.
 	$extension_upload = strtolower(  substr(  strrchr($_FILES['copieTicket']['name'], '.')  ,1)  );
 	if ( in_array($extension_upload,$extensions_valides) ) 
 	{
