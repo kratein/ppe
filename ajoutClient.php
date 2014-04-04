@@ -388,8 +388,6 @@ function ds_onclick(d, m, y) {
 		<td><td> <input type ="submit" name="CLIENT" value="Ajouter client" >
 	 </table>
 	 </form>
-	 <?php
-if ($_FILES['icone']['error'] > 0) $erreur = "Erreur lors du transfert";
-?>
+
 	</body>
 </html>

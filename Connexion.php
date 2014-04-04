@@ -15,12 +15,12 @@
     <tr>
      <td width="200"><b>Votre mot de passe<b></td>
      <td width="200">
-      <input type="password" name="password">
+      <input type="password" name="password"/>
      </td>
     </tr>
     <tr>
      <td colspan="2">
-      <input type="submit" name="submit" value="Connexion">
+      <input type="submit" name="submit" value="Connexion"/>
      </td>
     </tr> 
    </table>

@@ -1,10 +1,11 @@
 ﻿<html>
 <?php include ('bdd.php');
 ?>
-<form method="post" action="PhpAjoutCompteRendu.php" >
+<form method="post" action="PhpAjoutCompteRendu.php" enctype="multipart/form-data">
 	<head>
 	 <title>Ajout d'un compte-rendu</title>
      <h1><center>Formulaire d'ajout d'un compte-rendu</center></h1>
+	 
 	 <style type="text/css">
 
 .ds_box {
@@ -341,7 +342,7 @@ function ds_onclick(d, m, y) {
 	<tr>
 		<td width = '200'> Compte rendu </td>
 		<td width = '600'>
-		<input type="file" name="CompteRendu" id="CompteRendu" size ="50"/>
+		<input type="file" name="compteRendu" id="compteRendu" size ="50"/>
 		</td></tr>
 	
 	<tr><tr><td><td>
