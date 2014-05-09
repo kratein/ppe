@@ -11,8 +11,8 @@
  <?php
 session_start();
  include('bdd.php');
-$sql = mysql_query("SELECT * FROM ndf,visiteur WHERE idVisiteur=Visiteur_idVisiteur AND idVisiteur='".$_SESSION['id']."'");
-$req = "SELECT * FROM ndf, visiteur WHERE idVisiteur=Visiteur_idVisiteur AND idVisiteur='".$_SESSION['id']."'";
+$sql = mysql_query("SELECT * FROM ndf");
+$req = "SELECT * FROM ndf";
 $res = mysql_query($req) or die ('Erreur SQL !'.$req.'<br />'.mysql_error()); 
 $idNDF=""; 
 $DT_NDF="";
