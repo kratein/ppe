@@ -34,9 +34,10 @@ if ( isset($_POST) && (!empty($_POST['login'])) && (!empty($_POST['password'])) 
 	                    $_SESSION['id']=$idVisiteur;
 	                    $_SESSION ['nom']=$NomVisiteur;
 	                    $_SESSION ['civilite']=$Civilite;
-	                    header('Location: pageVisiteur.php'); ;		
+	                    header('Location: pageVisiteur.php'); 					
 			break;
-		case'rh':header('Location: pageRh.php'); ;
+		case'rh':header('Location: pageRh.php');
+		case'comptable':header('Location: pageComptable.php');
 	  }
 	  
     }

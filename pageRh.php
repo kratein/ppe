@@ -4,7 +4,7 @@
 session_start();
 ?>
 
-<font color = 'red'><h2><center>Bienvenue <?php echo " ".$_SESSION ['civilite']." "?><?php echo " ".$_SESSION['nom']." " ?> sur votre interface de GSB</center></h2></font>
+<font color = 'red'><h2><center>Bienvenue sur votre interface de GSB</center></h2></font>
 
 
 <a href='listeTouteNDF.php'><h1>liste des notes de frais</h1></a>

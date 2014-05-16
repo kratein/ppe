@@ -14,7 +14,7 @@ if(empty($_POST['NOM']) || empty($_POST['PRENOM']))
 	$data = mysql_fetch_assoc($req);
 	$Identifiant=$data['Identifiant_idIdentifiant'];
 	$sql2="DELETE FROM identifiant WHERE idIdentifiant=".$Identifiant."";
-	$req = mysql_query($sql2) or die('Erreur SQL : <br />'.$sql2);
+	$req = mysql_query($sql2) or die("Ce visiteur n'existe pas<br />");
 	echo("Votre visiteur a bien été supprimé.");
 	header ("Refresh: 3;URL=pageRh.php");
 }

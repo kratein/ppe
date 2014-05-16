@@ -1,6 +1,7 @@
 ﻿<?php
 include('bdd.php');
-
+session_start();
+$id=$_SESSION['id'];
 $Choix = $_POST['CATEGORIE'];
 $Date = $_POST['DATE'];
 $Montant = $_POST['TOTAL'];
@@ -37,7 +38,7 @@ if(empty($_POST['DATE']) || empty($_POST['TOTAL']) || empty($_POST['CATEGORIE'])
 	if ($resultat) 
 	{
 	echo "Transfert réussi.</br>";
-    $req="INSERT INTO ndf (DT_NDF,PRIX,Categorie_idCategorie, justificatif,Visiteur_idVisiteur ) VALUES ('$Date','$Montant','$Categorie','$nom',1)";
+    $req="INSERT INTO ndf (DT_NDF,PRIX,Categorie_idCategorie, justificatif,Visiteur_idVisiteur,Statut ) VALUES ('$Date','$Montant','$Categorie','$nom','$id','En attente')";
 	$res = mysql_query($req) or die ('Erreur SQL !'.$req.'<br />'.mysql_error());
 	echo("Votre note de frais a bien été enregistrée.");
 	header ("Refresh: 3;URL=pageVisiteur.php");

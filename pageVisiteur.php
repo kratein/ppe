@@ -13,6 +13,7 @@ session_start();
 <a href='listeClient.php'><h1>liste des clients</h1></a>
 <a href='agenda.php'><h1>agenda</h1></a>
 <a href='ajoutCompteRendu.php'><h1>ajouter un comte rendu</h1></a>
+<a href='voirCompteRendu.php'><h1>voir un comte rendu</h1></a>
 
 <body>
 </html>

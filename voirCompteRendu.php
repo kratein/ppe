@@ -1,10 +1,10 @@
 ﻿<html>
 <?php include ('bdd.php');
 ?>
-<form method="post" action="PhpSupprimerVisiteur.php" >
+<form method="post" action="PhpVoirCompteRendu.php" >
 	<head>
-	 <title>Supprimer un visiteur</title>
-     <h1><center>Formulaire de suppression d'un visiteur</center></h1>
+	 <title>voir compte-rendu</title>
+     <h1><center>Sur quels clients voulez voir les comptes-rendus</center></h1>
 <table>
 		<tr> 
 		<td width = '200'> Nom </td>
@@ -17,7 +17,7 @@
 		<td width = '600'>
 		<input type="text" name="PRENOM" size ="15"/>
 		</td></tr>
-		<td><td> <input type ="submit" name="VISITEUR" value="Supprimer visiteur" >	 
+		<td><td> <input type ="submit" name="CLIENT" value="Compte-rendu" >	 
 	 </form>
 </table>
 </html>
